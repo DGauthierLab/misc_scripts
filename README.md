@@ -9,4 +9,4 @@ bedtools https://bedtools.readthedocs.io/en/latest/
 
 Requires paired-end illumina reads, a .fasta reference genome, and a genomefile with format: 
 
-<chromosome name>  <length>
+\<chromosome name\>  \<length\>
