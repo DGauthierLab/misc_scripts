@@ -6,3 +6,7 @@ Requires:
 samtools http://www.htslib.org/
 SHRiMP http://compbio.cs.toronto.edu/shrimp/
 bedtools https://bedtools.readthedocs.io/en/latest/
+
+Requires paired-end illumina reads, a .fasta reference genome, and a genomefile with format: 
+
+<chromosome name>  <length>
