@@ -27,22 +27,6 @@ print ("Which chromosome?\n");
 my $chromo = <STDIN>;
 chomp $chromo;
 
-## alternate entry method
-#print ("I expect to find the following files:\n");
-#print ("~/Volumes/500GB/marinum_paired_files/$prefix/$prefix.trim.1.fastq\n");
-#print ("~/Volumes/500GB/marinum_paired_files/$prefix/$prefix.trim.2.fastq\n");
-#
-#
-#print ("Where is the reference genome?\n");
-#my $shrimp_genomefile = <STDIN>;
-#chomp $shrimp_genomefile;
-#
-#print ("Where is the genomefile for Bedtools?\n");
-#my $bedtools_genomefile = <STDIN>;
-#chomp $bedtools_genomefile;
-
-#my $pair1 = "~/Volumes/500GB/marinum_paired_files/$prefix/$prefix.trim.1.fastq";
-#my $pair2 = "~/Volumes/500GB/marinum_paired_files/$prefix/$prefix.trim.2.fastq";
 
 system ("mkdir ${prefix}_ref_${refstrain}");
 system ("gmapper -N 20 -p opp-in --qv-offset 33 --progress 0 -1 $pair1 -2 $pair2 $shrimp_genomefile > ${prefix}_ref_${refstrain}/${prefix}_ref_${refstrain}.map.sam"); 
